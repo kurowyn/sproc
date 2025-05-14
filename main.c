@@ -12,7 +12,7 @@ int main(void){
 		fprintf(stderr, "ERROR: could not open file; errno: %d", errno);
 		exit(1);
 	}
- fprintf(f, "%d", getpid());
+  fprintf(f, "%d", getpid());
 	fclose(f);
 
 	// The fork code. This is merely an example of a parent process with three children.
@@ -21,7 +21,7 @@ int main(void){
 			exit(0);
 	}
 	// This while loop is necessary, so that the Bash script finds time to grab the PID of
- // the process.
+  // the process.
 	while (1);
 	exit(0);
 }
